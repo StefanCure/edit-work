@@ -3439,34 +3439,60 @@ div#wrapper.open > .offcanvas-mask {
 }
 
 .brand-wrap-layout1 {
-  padding: 30px 0px 10px 0px;
+  padding: 30px 0px 15px 0px;
   max-width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.slick-carousel,
+.slick-slider {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.each-row {
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 991px) {
+  .each-row {
+    margin-left: 35px;
+  }
+}
+
+@media only screen and (max-width: 778px) {
+  .each-row {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .each-row {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .each-row {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .brand-wrap-layout1 {
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0px 20px 0px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .brand-wrap-layout1 {
-    padding: 40px 0px 0px 0px;
+    padding: 20px 0px 10px 0px;
     width: auto;
   }
 }
 
-.ma-aut {
-  margin: 0 auto 0 auto !important;
-}
-
-@media only screen and (max-width: 991px) {
-  .brand-box1 {
-    margin-bottom: 35px;
-  }
-}
 .brand-box1:hover .brand-img a img {
   filter: grayscale(0);
   opacity: 100%;
@@ -3474,12 +3500,6 @@ div#wrapper.open > .offcanvas-mask {
 .brand-box1 .brand-img {
   display: inline-block;
   width: auto;
-}
-
-@media only screen and (max-width: 991px) {
-  .brand-box1 .brand-img {
-    width: 70%;
-  }
 }
 .brand-box1 .brand-img a img {
   filter: grayscale(100%);
